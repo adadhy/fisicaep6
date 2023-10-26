@@ -23,3 +23,14 @@ function equacao1grau(){
     }
 
 }
+function inclui_nome() {
+    var nome_variavel = prompt("Coloque seu nome:");
+    if(nome_variavel){
+        document.getElementById("marcacao_nome").innerHTML = nome_variavel;
+    }
+    else{
+        alert("Nome não atribuido, preencha o nome.");
+        inclui_nome();
+    }
+}
+
